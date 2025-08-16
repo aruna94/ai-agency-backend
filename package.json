@@ -1,0 +1,30 @@
+{
+  "name": "ai-agency-backend",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --watch src --ext ts --exec \"node --loader ts-node/esm ./src/index.ts\"",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "cors": "2.8.5",
+    "dotenv": "16.4.5",
+    "express": "4.19.2",
+    "express-rate-limit": "7.0.0",
+    "express-validator": "7.0.1",
+    "helmet": "7.1.0",
+    "mongoose": "8.4.1",
+    "morgan": "1.10.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "4.17.21",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^20.14.9",
+    "nodemon": "^3.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
